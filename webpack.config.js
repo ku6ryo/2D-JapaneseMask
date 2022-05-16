@@ -20,7 +20,7 @@ module.exports = async () => {
           use: ["style-loader", "css-loader"]
         },
         {
-          test: /\.glb/,
+          test: /\.png/,
           use: "file-loader",
         },
       ],

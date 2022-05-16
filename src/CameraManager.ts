@@ -1,7 +1,3 @@
-enum FacingMode {
-  Front = "front",
-  Back = "back"
-}
 
 export default class CameraManager {
 
