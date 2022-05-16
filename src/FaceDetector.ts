@@ -8,7 +8,9 @@ export default class FaceDetector {
 
   async init() {
     await tf.setBackend("webgl")
-    this.#model = await load()
+    this.#model = await load({
+      maxFaces: 100,
+    })
   }
 
   async estimate(input: HTMLVideoElement) {
